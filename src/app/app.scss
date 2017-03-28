@@ -1,0 +1,259 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+* {
+  font-family: "Segoe UI Light";
+}
+
+//*******************************************     common classes    *************************************
+
+//color styles
+//===================================================
+
+.warning{
+  color: color($colors, error);
+}
+
+.light {
+  color: color($colors, light);
+}
+
+.semi-light {
+  color: color($colors, semi-light);
+}
+
+.yellow{
+  color: color($colors, yellow);
+}
+
+.primary-bg {
+  background-color: color($colors, primary);
+}
+
+.secondary-bg {
+  background-color: color($colors, secondary);
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
+//text styles
+//====================================================
+.strong {
+  font-weight: bold;
+}
+
+.text-xl {
+  font-size: 2.5rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-md {
+  font-size: 1.6rem;
+}
+
+.text-nm {
+  font-size: 1.4rem;
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+}
+
+.text-xxs {
+  font-size: 0.6rem;
+}
+
+//space styles
+//======================================================
+
+.new-line{
+  display: block;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-top-55 {
+  margin-top: 55px;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+// nav bar style
+//=======================================================
+ion-tabs {
+
+  ion-navbar.toolbar {
+    padding: 0 4px;
+
+    .button {
+      margin: 0;
+    }
+  }
+}
+
+//list & item styles
+//======================================================
+
+.list-form {
+
+  .item {
+    padding-left: 0;
+  }
+
+  .item:first-child {
+    border-top: 0;
+  }
+
+  .item-select {
+    .label-md {
+      margin-left: 8px;
+    }
+  }
+}
+
+.list-no-border {
+
+  .item:first-child {
+    border: none;
+  }
+  .item:last-child {
+    border: none;
+  }
+
+  .item-block {
+
+    .item-inner {
+      border: none;
+    }
+  }
+}
+
+.list-with-border {
+  @extend .list-no-border;
+
+  .item,
+  .item:first-child,
+  .item:last-child {
+    .input-wrapper {
+      border-bottom: 1px solid color($colors, light);
+    }
+  }
+  .item-input.input-has-focus,
+  .item-input.input-has-focus:last-child {
+    border-bottom-color: color($colors, light);
+  }
+}
+
+.list-with-full-border {
+  @extend .list-no-border;
+
+  .item,
+  .item:first-child,
+  .item:last-child {
+    border-bottom: 1px solid color($colors, light);
+  }
+  .item-input.input-has-focus,
+  .item-input.input-has-focus:last-child {
+    border-bottom-color: color($colors, light);
+  }
+}
+
+.list-with-input-border {
+  .item-block, .item-inner:first-child, .item-input:last-child {
+    border: none;
+  }
+  ion-input {
+    border-bottom: 1px solid color($colors, light);
+  }
+}
+
+.item.no-border {
+
+  .item-inner {
+    border: none;
+  }
+}
+
+.item-no-bg {
+  @extend .no-bg;
+  //ion-input.has-focus:after, ion-input.has-focus:last-child {
+  //  border-bottom: 1px solid $text-input-md-highlight-color;
+  //}
+  .label-md[floating] {
+    color: color($colors, light) !important;
+  }
+}
+
+//end of common classes
+
+
+
+.icon-lg {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.shadow-md {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.at-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

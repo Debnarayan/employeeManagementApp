@@ -1,0 +1,23 @@
+page-verify-code, .verify-code-page {
+
+  .key-input-container {
+    width: 180px;
+    margin: 16px auto;
+
+    .key-input{
+      border-bottom: 2px solid color($colors, light);
+    }
+  }
+
+  .key-input {
+    input {
+      @extend .text-xl;
+      @extend .strong;
+      letter-spacing: 10px;
+    }
+    ::-webkit-input-placeholder{
+      font-size: 1.5rem;
+      letter-spacing: normal;
+    }
+  }
+}
