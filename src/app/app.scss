@@ -51,6 +51,13 @@
   background-color: transparent;
 }
 
+.primary-btn{
+  background-color: color($colors, primary-btn);
+  .button-inner{
+    color: color($colors, semi-dark);
+  }
+}
+
 //text styles
 //====================================================
 .strong {
