@@ -14,12 +14,14 @@ import { LandingPage } from '../pages/landing/landing';
 import {LoginPage} from "../pages/login/login";
 import {VerifyCodePage} from "../pages/verify-code/verify-code";
 import {ChangePasswordPage} from "../pages/change-password/change-password";
+import {VerifyEmailPage} from "../pages/verify-email/verify-email";
 
 @NgModule({
   declarations: [
     MyApp,
     LandingPage,
     LoginPage,
+    VerifyEmailPage,
     VerifyCodePage,
     ChangePasswordPage
   ],
@@ -31,6 +33,7 @@ import {ChangePasswordPage} from "../pages/change-password/change-password";
     MyApp,
     LandingPage,
     LoginPage,
+    VerifyEmailPage,
     VerifyCodePage,
     ChangePasswordPage
   ],

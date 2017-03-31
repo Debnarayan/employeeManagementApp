@@ -16,8 +16,12 @@ import {ChangePasswordPage} from "../change-password/change-password";
 export class VerifyCodePage implements OnInit {
 
   remainingTime: string;
+  parameter1: string;
+  authCode:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.parameter1 = navParams.get('param1');
+    this.authCode = "";
   }
 
   ngOnInit(): any {
@@ -33,7 +37,9 @@ export class VerifyCodePage implements OnInit {
 }
 
   goToChangePassword(){
-    this.navCtrl.push(ChangePasswordPage);
+    if(this.authCode.length >= 4){
+      this.navCtrl.push(ChangePasswordPage);
+    }
   }
 
 }

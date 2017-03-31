@@ -1,12 +1,9 @@
 page-verify-code, .verify-code-page {
 
   .key-input-container {
-    width: 180px;
-    margin: 16px auto;
-
-    .key-input{
-      border-bottom: 2px solid color($colors, light);
-    }
+    width: 80%;
+    margin: 32px auto;
+    padding: 0px 16px 10px;
   }
 
   .key-input {
@@ -19,5 +16,6 @@ page-verify-code, .verify-code-page {
       font-size: 1.5rem;
       letter-spacing: normal;
     }
+    border-bottom: 2px solid color($colors, light);
   }
 }

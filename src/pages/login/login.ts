@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {VerifyCodePage} from "../verify-code/verify-code";
+import {VerifyEmailPage} from "../verify-email/verify-email";
 
 /*
   Generated class for the Login page.
@@ -21,7 +21,7 @@ export class LoginPage {
   }
 
   forgotKey(){
-    this.navCtrl.push(VerifyCodePage);
+    this.navCtrl.push(VerifyEmailPage);
   }
 
 }

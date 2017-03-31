@@ -15,14 +15,14 @@
 
 <ion-content padding class="primary-bg">
   <div class="light text-lg margin-top-80">
-    A verification code has been sent to your registered Mail ID:
+    A verification code has been sent to <span class="strong">{{parameter1}}</span> :
   </div>
   <div class="key-input-container">
-    <ion-input type="number" text-center placeholder="Verification Code Here" class="light key-input" (input)="goToChangePassword()"></ion-input>
-    <div text-center class="warning margin-top strong">Expires in {{remainingTime || "02:00"}}</div>
+    <ion-input type="text" text-center placeholder="Verification Code Here" class="light key-input" [(ngModel)]="authCode" (input)="goToChangePassword()"></ion-input>
+    <div text-center class="warning margin-top strong bold">Expires in {{remainingTime || "02:00"}}</div>
   </div>
-  <div class="light text-lg margin-top-30">
-    I remember my password,
-    <div class="new-line">back to <span class="yellow text-xl strong" (click)="goToLogin()">Log In</span></div>
-  </div>
+  <!--<div class="light text-lg margin-top-30">-->
+    <!--I remember my password,-->
+    <!--<div class="new-line">back to <span class="yellow text-xl strong" (click)="goToLogin()">Log In</span></div>-->
+  <!--</div>-->
 </ion-content>
