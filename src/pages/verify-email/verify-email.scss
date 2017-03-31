@@ -1,0 +1,12 @@
+page-verify-email {
+
+
+@extend .verify-code-page;
+ .key-input{
+   input{
+     letter-spacing: normal;
+     font-size: 1.5rem !important;
+   }
+ }
+
+}

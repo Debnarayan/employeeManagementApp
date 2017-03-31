@@ -1,0 +1,30 @@
+<!--
+  Generated template for the VerifyCode page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>-->
+
+<!--<ion-navbar>-->
+<!--<ion-title>verifyCode</ion-title>-->
+<!--</ion-navbar>-->
+
+<!--</ion-header>-->
+
+
+<ion-content padding class="primary-bg">
+  <div class="light text-lg margin-top-80">
+    Please provide us your registered Mail ID:
+  </div>
+  <div class="key-input-container">
+    <ion-input type="email" placeholder="Registered Email Here" [(ngModel)]="authID" class="light key-input"></ion-input>
+    <div text-center class="margin-top">
+      <button ion-button round class="primary-btn strong-btn text-md" (click)="goToVerifyCode()">NEXT</button>
+    </div>
+  </div>
+  <!--<div class="light text-lg margin-top-30">-->
+  <!--I remember my password,-->
+  <!--<div class="new-line">back to <span class="yellow text-xl strong" (click)="goToLogin()">Log In</span></div>-->
+  <!--</div>-->
+</ion-content>
