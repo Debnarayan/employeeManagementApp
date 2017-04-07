@@ -4,16 +4,12 @@ $font-path: "../assets/fonts";
 
 @import "ionic.globals";
 
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
-
-
-
 
 // Named Color Variables
 // --------------------------------------------------
@@ -24,39 +20,31 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #0078AF,
-  secondary:  #30518C,
-  danger:     #f53d3d,
-  light:      #ffffff,
+  primary: #0078AF,
+  secondary: #30518C,
+  danger: #f53d3d,
+  light: #ffffff,
   semi-light: #E7E7E7,
-  yellow:     #FFC107,
-  primary-btn: #1DE9B6,
-  dark:       #222,
+  gray: #BDBDBD,
+  yellow: #FFC107,
+  //primary-btn: #F3E185,
+  primary-btn: #E4E4E4,
+  dark: #222,
   semi-dark: #3e3e3e,
   error: #FF5722
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -67,14 +55,12 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
 
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------

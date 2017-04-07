@@ -4,21 +4,22 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<!--<ion-header>-->
+<ion-header class="transparent-bar">
 
-<!--<ion-navbar>-->
-<!--<ion-title>verifyCode</ion-title>-->
-<!--</ion-navbar>-->
+  <ion-navbar>
+    <!--<ion-title color="light">verifyCode</ion-title>-->
+  </ion-navbar>
 
-<!--</ion-header>-->
+</ion-header>
 
 
 <ion-content padding class="primary-bg">
-  <div class="light text-lg margin-top-80">
+  <div class="light text-lg margin-top-55">
     Please provide us your registered Mail ID:
   </div>
   <div class="key-input-container">
-    <ion-input type="email" placeholder="Registered Email Here" [(ngModel)]="authID" class="light key-input"></ion-input>
+    <ion-input type="email" placeholder="Registered Email Here" [(ngModel)]="authID"
+               class="light key-input"></ion-input>
     <div text-center class="margin-top">
       <button ion-button round class="primary-btn strong-btn text-md" (click)="goToVerifyCode()">NEXT</button>
     </div>

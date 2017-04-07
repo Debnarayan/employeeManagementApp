@@ -23,7 +23,7 @@
 //color styles
 //===================================================
 
-.warning{
+.warning {
   color: color($colors, error);
 }
 
@@ -35,7 +35,7 @@
   color: color($colors, semi-light);
 }
 
-.dark{
+.dark {
   color: color($colors, dark);
 }
 
@@ -51,9 +51,9 @@
   background-color: transparent;
 }
 
-.primary-btn{
+.primary-btn {
   background-color: color($colors, primary-btn);
-  .button-inner{
+  .button-inner {
     color: color($colors, semi-dark);
   }
 }
@@ -64,13 +64,13 @@
   font-weight: bold;
 }
 
-.bold{
+.bold {
   font-family: "Segoe UI Semibold";
 }
 
 .strong-btn {
   font-weight: bold;
-  span{
+  span {
     font-family: "Segoe UI Semibold";
   }
 }
@@ -106,7 +106,7 @@
 //space styles
 //======================================================
 
-.new-line{
+.new-line {
   display: block;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .input-no-margin {
-  input{
+  input {
     margin-top: 0 !important;
   }
 }
@@ -169,6 +169,23 @@ ion-tabs {
   }
 }
 
+.transparent-bar {
+  .toolbar {
+    .toolbar-background {
+      background: transparent;
+    }
+  }
+  ion-icon {
+    color: color($colors, light);
+  }
+  .toolbar-title {
+    color: white;
+  }
+  &:after {
+    height: 0 !important;
+  }
+}
+
 //list & item styles
 //======================================================
 
@@ -206,7 +223,6 @@ ion-tabs {
   }
 }
 
-
 .list-with-border {
   @extend .list-no-border;
 
@@ -223,7 +239,6 @@ ion-tabs {
   }
 }
 
-
 .card-with-border {
   @extend .list-no-border;
   @extend .input-no-margin;
@@ -232,7 +247,7 @@ ion-tabs {
   .item:first-child,
   .item:last-child {
     padding-left: 12px;
-    .item-inner{
+    .item-inner {
       margin-right: 12px;
       border-bottom: 2px solid color($colors, primary);
       box-shadow: none;
@@ -303,9 +318,13 @@ ion-tabs {
 //  }
 //}
 
+// alert, loader & toast styles
+//==============================================================
+.alert-message {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
 //end of common classes
-
-
 
 .icon-lg {
   border-radius: 50%;

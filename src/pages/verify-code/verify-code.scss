@@ -3,7 +3,7 @@ page-verify-code, .verify-code-page {
   .key-input-container {
     width: 80%;
     margin: 32px auto;
-    padding: 0px 16px 10px;
+    padding: 0 16px 10px;
   }
 
   .key-input {
@@ -12,9 +12,10 @@ page-verify-code, .verify-code-page {
       @extend .strong;
       letter-spacing: 10px;
     }
-    ::-webkit-input-placeholder{
+    ::-webkit-input-placeholder {
       font-size: 1.5rem;
       letter-spacing: normal;
+      color: color($colors, gray);
     }
     border-bottom: 2px solid color($colors, light);
   }
